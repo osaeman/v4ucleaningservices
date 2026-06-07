@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="V4U Cleaning Services – Professional commercial cleaning solutions across the UK. Healthcare, office, retail, and specialist cleaning services."
+    />
+    <meta
+      name="keywords"
+      content="commercial cleaning, office cleaning, healthcare cleaning, UK cleaning services, V4U cleaning"
+    />
+    <title>V4U Cleaning Services | Professional Commercial Cleaning UK</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ============================================================
+       HEADER
+  ============================================================ -->
+    <header class="header" id="header">
+      <a href="#" class="header__logo" aria-label="V4U Cleaning Services Home">
+        <div class="header__logo-icon">V4U</div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">V4U Cleaning</span>
+          <span class="header__logo-tag">Services</span>
+        </div>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#about" class="nav__link">About Us</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="#quote" class="btn btn--primary">
+          <i class="fa-solid fa-file-lines"></i> Get a Quote
+        </a>
+      </nav>
+
+      <button
+        class="header__burger"
+        id="burger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Mobile nav -->
+    <div
+      class="header__mobile-menu"
+      id="mobileMenu"
+      role="navigation"
+      aria-label="Mobile navigation"
+    >
+      <a href="#services" class="nav__link" data-mobile-link>Services</a>
+      <a href="#about" class="nav__link" data-mobile-link>About Us</a>
+      <a href="#contact" class="nav__link" data-mobile-link>Contact</a>
+      <a href="#quote" class="btn btn--primary" data-mobile-link>
+        <i class="fa-solid fa-file-lines"></i> Get a Quote
+      </a>
+    </div>
+
+    <!-- ============================================================
+       HERO
+  ============================================================ -->
+    <section class="hero" id="hero" aria-label="Hero section">
+      <div class="hero__slider" aria-hidden="true">
+        <div class="hero__slide hero__slide--1 active"></div>
+        <div class="hero__slide hero__slide--2"></div>
+        <div class="hero__slide hero__slide--3"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__eyebrow">UK's Trusted Cleaning Partner</span>
+
+        <h1 class="hero__title">
+          V4U Cleaning<br />
+          <span class="accent">Services</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Delivering exceptional commercial cleaning solutions across the UK —
+          from healthcare facilities to corporate offices, tailored to the
+          highest industry standards.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#quote" class="btn btn--primary">
+            <i class="fa-solid fa-paper-plane"></i> Request a Free Quote
+          </a>
+          <a href="#services" class="btn btn--outline">
+            <i class="fa-solid fa-grid-2"></i> Our Services
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__indicators" aria-label="Slideshow navigation">
+        <button
+          class="hero__dot active"
+          data-slide="0"
+          aria-label="Slide 1"
+        ></button>
+        <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+
+      <div class="hero__stats" aria-label="Company statistics">
+        <div class="hero__stat">
+          <div class="hero__stat-num">100+</div>
+          <div class="hero__stat-label">Clients Served</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">15+</div>
+          <div class="hero__stat-label">Specialist Services</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">100%</div>
+          <div class="hero__stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services__header fade-up">
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-title" id="services-title">
+            Specialist Cleaning <span>Services</span>
+          </h2>
+          <p>
+            From clinical environments to corporate spaces, we deliver precision
+            cleaning tailored to every sector's unique demands.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <!-- 1 Healthcare -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/21.jpg"
+              alt="Healthcare facility cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-hospital"></i>
+              </div>
+              <h3 class="service-card__title">Healthcare Services</h3>
+              <p class="service-card__desc">
+                Stringent infection control and clinical-grade sanitation for
+                hospitals, clinics, and medical facilities.
+              </p>
+            </div>
+          </article>
+
+          <!-- 2 Office -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/17.jpg"
+              alt="Office and building cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <h3 class="service-card__title">
+                Office &amp; Building Cleaning
+              </h3>
+              <p class="service-card__desc">
+                Professional workspace cleaning that fosters productivity and
+                leaves a lasting impression on clients and staff.
+              </p>
+            </div>
+          </article>
+
+          <!-- 3 Manufacturing -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/16.jpg"
+              alt="Manufacturing facility cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <h3 class="service-card__title">
+                Manufacturing Facility Cleaning
+              </h3>
+              <p class="service-card__desc">
+                Heavy-duty industrial cleaning designed to maintain safe,
+                compliant, and efficient production environments.
+              </p>
+            </div>
+          </article>
+
+          <!-- 4 Restaurant -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/11.jpg"
+              alt="Restaurant cleaning services"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <h3 class="service-card__title">Restaurant Cleaning</h3>
+              <p class="service-card__desc">
+                Kitchen deep-cleans and front-of-house hygiene solutions that
+                meet food safety standards and elevate dining experiences.
+              </p>
+            </div>
+          </article>
+
+          <!-- 5 Retail -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/26.jpg"
+              alt="Retail cleaning services"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <h3 class="service-card__title">Retail Cleaning</h3>
+              <p class="service-card__desc">
+                Creating pristine shopping environments that enhance the
+                customer experience and reflect your brand's quality.
+              </p>
+            </div>
+          </article>
+
+          <!-- 6 Construction -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/25.jpg"
+              alt="Construction cleaning services"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <h3 class="service-card__title">Construction Cleaning</h3>
+              <p class="service-card__desc">
+                Post-build cleaning specialists removing dust, debris and site
+                waste to deliver spotless, move-in ready spaces.
+              </p>
+            </div>
+          </article>
+
+          <!-- 7 Care Home -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/4.jpg"
+              alt="Care home cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-house-medical"></i>
+              </div>
+              <h3 class="service-card__title">Care Home Cleaning</h3>
+              <p class="service-card__desc">
+                Compassionate and thorough cleaning for residential care
+                settings, protecting residents' health and dignity.
+              </p>
+            </div>
+          </article>
+
+          <!-- 8 Car Showroom -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/9.jpg"
+              alt="Car showroom cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <h3 class="service-card__title">Car Showroom Cleaning</h3>
+              <p class="service-card__desc">
+                Immaculate showroom presentation standards that complement your
+                vehicles and impress every visiting customer.
+              </p>
+            </div>
+          </article>
+
+          <!-- 9 Hotel -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/13.jpg"
+              alt="Hotel and resort cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <h3 class="service-card__title">Hotel / Resort Cleaning</h3>
+              <p class="service-card__desc">
+                Five-star housekeeping and facilities maintenance that exceeds
+                guest expectations and upholds your brand reputation.
+              </p>
+            </div>
+          </article>
+
+          <!-- 10 Gym -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/24.jpg"
+              alt="Gym cleaning services"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-dumbbell"></i>
+              </div>
+              <h3 class="service-card__title">Gym Cleaning Services</h3>
+              <p class="service-card__desc">
+                High-touch equipment sanitisation and locker room hygiene that
+                keeps members safe and keeps them coming back.
+              </p>
+            </div>
+          </article>
+
+          <!-- 11 Bank -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/23.jpg"
+              alt="Bank cleaning services"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <h3 class="service-card__title">Bank Cleaning</h3>
+              <p class="service-card__desc">
+                Discreet, secure, and immaculate cleaning for financial
+                institutions requiring the highest levels of trust and
+                reliability.
+              </p>
+            </div>
+          </article>
+
+          <!-- 12 Stadium -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/22.jpg"
+              alt="Stadium and event cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-football"></i>
+              </div>
+              <h3 class="service-card__title">Stadium &amp; Event Cleaning</h3>
+              <p class="service-card__desc">
+                Rapid-deployment pre and post-event cleaning for venues of all
+                sizes, restoring spaces to pristine condition swiftly.
+              </p>
+            </div>
+          </article>
+
+          <!-- 13 Public Sector -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/1.jpg"
+              alt="Public sector cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-city"></i>
+              </div>
+              <h3 class="service-card__title">Public Sector Cleaning</h3>
+              <p class="service-card__desc">
+                Government-compliant cleaning services for councils, public
+                buildings, and civic spaces used by local communities.
+              </p>
+            </div>
+          </article>
+
+          <!-- 14 School -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/7.jpg"
+              alt="School and university cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <h3 class="service-card__title">
+                School &amp; University Cleaning
+              </h3>
+              <p class="service-card__desc">
+                Safe, child-friendly cleaning solutions that support healthy
+                learning environments across educational institutions.
+              </p>
+            </div>
+          </article>
+
+          <!-- 15 Tourism & Leisure -->
+          <article class="service-card fade-up">
+            <img
+              class="service-card__img"
+              src="./asssets/18.jpg"
+              alt="Tourism and leisure cleaning"
+              loading="lazy"
+            />
+            <div class="service-card__body">
+              <div class="service-card__icon">
+                <i class="fa-solid fa-umbrella-beach"></i>
+              </div>
+              <h3 class="service-card__title">
+                Tourism &amp; Leisure Cleaning
+              </h3>
+              <p class="service-card__desc">
+                Thorough cleaning for leisure and tourism destinations, ensuring
+                every visitor's first and lasting impression is spotless.
+              </p>
+            </div>
+          </article>
+        </div>
+        <!-- /.services__grid -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__visual fade-up">
+            <img
+              class="about__img-main"
+              src="./asssets/2.jpg"
+              alt="Professional cleaning team at work"
+              loading="lazy"
+            />
+            <img
+              class="about__img-accent"
+              src="./asssets/14.jpg"
+              alt="Cleaning equipment"
+              loading="lazy"
+            />
+            <div class="about__badge">
+              <span class="about__badge-num">10+</span>
+              <span class="about__badge-text">Years of<br />Excellence</span>
+            </div>
+          </div>
+
+          <div class="about__content fade-up">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title" id="about-title">
+              Committed to <span>Cleaner</span>, Safer Spaces
+            </h2>
+
+            <p class="about__text">
+              V4U Cleaning Services supports UK businesses with dependable
+              commercial cleaning that keeps workplaces hygienic, presentable,
+              and ready for daily operations.
+            </p>
+            <p class="about__text">
+              Our trained team creates sector-specific cleaning plans for
+              offices, healthcare settings, retail spaces, leisure venues, and
+              specialist facilities with consistent attention to detail.
+            </p>
+
+            <div class="about__features">
+              <div class="about__feature">
+                <i class="fa-solid fa-shield-halved about__feature-icon"></i>
+                <div>
+                  <div class="about__feature-title">Fully Insured</div>
+                  <div class="about__feature-text">
+                    Comprehensive cover for complete peace of mind.
+                  </div>
+                </div>
+              </div>
+              <div class="about__feature">
+                <i class="fa-solid fa-leaf about__feature-icon"></i>
+                <div>
+                  <div class="about__feature-title">Eco-Friendly</div>
+                  <div class="about__feature-text">
+                    Green products that protect people and planet.
+                  </div>
+                </div>
+              </div>
+              <div class="about__feature">
+                <i class="fa-solid fa-users about__feature-icon"></i>
+                <div>
+                  <div class="about__feature-title">Trained Staff</div>
+                  <div class="about__feature-text">
+                    Vetted, DBS-checked, and industry-certified teams.
+                  </div>
+                </div>
+              </div>
+              <div class="about__feature">
+                <i class="fa-solid fa-clock about__feature-icon"></i>
+                <div>
+                  <div class="about__feature-title">Flexible Scheduling</div>
+                  <div class="about__feature-text">
+                    Day, night, or weekend cleans around your hours.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__header fade-up">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title" id="contact-title">
+            Let's Start a <span>Conversation</span>
+          </h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact-card fade-up">
+            <div class="contact-card__icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-card__label">General Enquiries</div>
+            <div class="contact-card__value">
+              <a href="mailto:info@v4ucleaningservices.co.uk"
+                >info@v4ucleaningservices.co.uk</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-card fade-up">
+            <div class="contact-card__icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="contact-card__label">Sales &amp; Quotes</div>
+            <div class="contact-card__value">
+              <a href="mailto:sales@v4ucleaningservices.co.uk"
+                >sales@v4ucleaningservices.co.uk</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-card fade-up">
+            <div class="contact-card__icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-card__label">Phone</div>
+            <div class="contact-card__value">
+              <a href="tel:+442012345678">+44 20 1234 5678</a><br />
+              <a href="tel:+442098765432">+44 20 9876 5432</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       QUOTE
+  ============================================================ -->
+    <section class="quote" id="quote" aria-labelledby="quote-title">
+      <div class="container">
+        <div class="quote__inner">
+          <div class="quote__left fade-up">
+            <span class="section-label">Free Quote</span>
+            <h2 class="quote__title" id="quote-title">
+              Request a <span>Tailored</span> Cleaning Quote
+            </h2>
+            <p class="quote__desc">
+              Tell us about your site, service needs, and preferred schedule. We
+              will review your enquiry and prepare a clear cleaning proposal for
+              your business.
+            </p>
+
+            <ul class="quote__promise">
+              <li class="quote__promise-item">
+                <i class="fa-solid fa-circle-check"></i>
+                Personalised cleaning programme for your sector
+              </li>
+              <li class="quote__promise-item">
+                <i class="fa-solid fa-circle-check"></i>
+                Transparent pricing with no hidden charges
+              </li>
+              <li class="quote__promise-item">
+                <i class="fa-solid fa-circle-check"></i>
+                Dedicated account manager from day one
+              </li>
+              <li class="quote__promise-item">
+                <i class="fa-solid fa-circle-check"></i>
+                Flexible service timing according to your requirements
+              </li>
+            </ul>
+          </div>
+
+          <div class="quote__form-wrap fade-up">
+            <div class="quote__form-title">Request a Quote</div>
+            <p class="quote__form-sub">All fields marked * are required</p>
+
+            <form id="quoteForm" novalidate>
+              <div class="form__grid">
+                <div class="form__group">
+                  <label class="form__label" for="fullName">Full Name *</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="John Smith"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="companyName"
+                    >Company Name *</label
+                  >
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    placeholder="Acme Ltd."
+                    required
+                    autocomplete="organization"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="emailAddress"
+                    >Email Address *</label
+                  >
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="emailAddress"
+                    name="emailAddress"
+                    placeholder="john@company.co.uk"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="phoneNumber"
+                    >Phone Number *</label
+                  >
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="+44 20 1234 5678"
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="serviceRequired"
+                    >Service Required *</label
+                  >
+                  <select
+                    class="form__select"
+                    id="serviceRequired"
+                    name="serviceRequired"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select a service…
+                    </option>
+                    <option>Healthcare Services</option>
+                    <option>Office &amp; Building Cleaning</option>
+                    <option>Manufacturing Facility Cleaning</option>
+                    <option>Restaurant Cleaning</option>
+                    <option>Retail Cleaning</option>
+                    <option>Construction Cleaning</option>
+                    <option>Care Home Cleaning</option>
+                    <option>Car Showroom Cleaning</option>
+                    <option>Hotel / Resort Cleaning</option>
+                    <option>Gym Cleaning Services</option>
+                    <option>Bank Cleaning</option>
+                    <option>Stadium &amp; Event Cleaning</option>
+                    <option>Public Sector Cleaning</option>
+                    <option>School &amp; University Cleaning</option>
+                    <option>Tourism &amp; Leisure Cleaning</option>
+                    <option>Other / Multiple Services</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="postcode">Postcode *</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    placeholder="EC1A 1AA"
+                    required
+                    autocomplete="postal-code"
+                  />
+                </div>
+
+                <div class="form__group form__group--full">
+                  <label class="form__label" for="additionalInfo"
+                    >Additional Information</label
+                  >
+                  <textarea
+                    class="form__textarea"
+                    id="additionalInfo"
+                    name="additionalInfo"
+                    placeholder="Tell us more about your cleaning requirements, frequency, site size, or anything else that would help us prepare your quote…"
+                  ></textarea>
+                </div>
+              </div>
+              <!-- /.form__grid -->
+
+              <button
+                type="submit"
+                class="btn btn--primary form__submit"
+                id="submitBtn"
+              >
+                <span class="btn__spinner" id="spinner"></span>
+                <i class="fa-solid fa-paper-plane" id="submitIcon"></i>
+                <span id="submitText">Request a Quote</span>
+              </button>
+
+              <div
+                class="form__message form__message--success"
+                id="formSuccess"
+              >
+                <i class="fa-solid fa-circle-check"></i>&nbsp; Thank you! Your
+                quote request has been received. We'll be in touch within 2
+                working hours.
+              </div>
+              <div class="form__message form__message--error" id="formError">
+                <i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Something
+                went wrong. Please try again or email us directly at
+                info@v4ucleaningservices.co.uk
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer" aria-label="Site footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <a
+              href="#"
+              class="header__logo"
+              aria-label="V4U Cleaning Services Home"
+            >
+              <div class="header__logo-icon">V4U</div>
+              <div class="header__logo-text">
+                <span class="header__logo-name">V4U Cleaning</span>
+                <span class="header__logo-tag">Services</span>
+              </div>
+            </a>
+            <p>
+              Professional commercial cleaning solutions for businesses that
+              need reliable standards, flexible service plans, and consistently
+              clean spaces.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__info-card">
+            <div class="footer__info-item">
+              <span class="footer__info-icon"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              <div>
+                <div class="footer__col-title">Office Address</div>
+                <p class="footer__address">
+                  Floor 2 Quantrill House<br />2 Dunstable Road<br />Luton LU1
+                  1DX
+                </p>
+              </div>
+            </div>
+            <div class="footer__info-item">
+              <span class="footer__info-icon"
+                ><i class="fa-solid fa-clock"></i
+              ></span>
+              <div>
+                <div class="footer__col-title">Operating Time</div>
+                <p class="footer__address">
+                  Scheduled according to each client’s cleaning requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            &copy; 2026 <span>V4U Cleaning Services</span>. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
