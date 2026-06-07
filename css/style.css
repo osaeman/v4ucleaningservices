@@ -372,17 +372,17 @@ ul {
 }
 
 .hero__slide--1 {
-  background-image: url("../asssets/27.jpg");
+  background-image: url("../assests/27.jpg");
   background-position: right center;
   background-size: cover;
 }
 .hero__slide--2 {
-  background-image: url("../asssets/8.jpg");
+  background-image: url("../assests/8.jpg");
   background-position: right center;
   background-size: cover;
 }
 .hero__slide--3 {
-  background-image: url("../asssets/2.jpg");
+  background-image: url("../assests/2.jpg");
   background-position: right center;
   background-size: cover;
 }
@@ -1626,7 +1626,7 @@ ul {
       rgba(10, 22, 40, 0.88) 42%,
       rgba(10, 22, 40, 0.55) 100%
     ),
-    url("../asssets/17.jpg") center/cover no-repeat;
+    url("../assests/17.jpg") center/cover no-repeat;
   padding: 110px 0;
 }
 
