@@ -7,6 +7,9 @@ This package contains the updated V4U Cleaning Services single-page website with
 ```txt
 v4u-cleaning-updated/
 ├── index.html
+├── .htaccess
+├── assests/
+│   └── optimized/       # Responsive WebP images
 ├── css/
 │   └── style.css
 ├── js/
@@ -16,6 +19,13 @@ v4u-cleaning-updated/
 ```
 
 ## Updates Included
+
+- Reduced the image payload from approximately 13.4 MB of JPEGs to approximately 1.3 MB of responsive WebP variants.
+- Added mobile-appropriate `srcset` and `sizes` values so phones do not download desktop-scale service images.
+- Preloaded the first hero image and delayed the remaining carousel images until after the initial page load.
+- Deferred the quote-section background image until the section approaches the viewport.
+- Added explicit image dimensions and asynchronous decoding to reduce layout shifts and main-thread work.
+- Added Apache compression and browser-caching rules in `.htaccess`.
 
 - Separated inline CSS and JavaScript into dedicated files.
 - Modernized the header CTA, hero buttons, and quote submit button.

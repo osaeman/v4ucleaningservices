@@ -38,10 +38,22 @@
     let   current   = 0;
     let   sliderInt = null;
 
+    function loadSlideBackground(slide) {
+      if (!slide || slide.dataset.bgLoaded === 'true') return;
+      const source = window.matchMedia('(max-width: 640px)').matches
+        ? slide.dataset.bgMobile
+        : slide.dataset.bgDesktop;
+      if (source) {
+        slide.style.backgroundImage = `url("${source}")`;
+        slide.dataset.bgLoaded = 'true';
+      }
+    }
+
     function goToSlide(idx) {
       slides[current].classList.remove('active');
       dots[current].classList.remove('active');
       current = (idx + slides.length) % slides.length;
+      loadSlideBackground(slides[current]);
       slides[current].classList.add('active');
       dots[current].classList.add('active');
     }
@@ -57,6 +69,28 @@
         sliderInt = setInterval(nextSlide, 5500);
       });
     });
+
+    // Keep later hero slides out of the critical loading path.
+    window.addEventListener('load', () => {
+      const loadRemainingSlides = () => slides.forEach(loadSlideBackground);
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadRemainingSlides, { timeout: 2500 });
+      } else {
+        setTimeout(loadRemainingSlides, 1200);
+      }
+    }, { once: true });
+
+    // Load the quote background only when the section approaches the viewport.
+    const quoteSection = document.querySelector('.quote');
+    if (quoteSection) {
+      const quoteBackgroundObserver = new IntersectionObserver((entries, obs) => {
+        if (entries.some(entry => entry.isIntersecting)) {
+          quoteSection.classList.add('bg-loaded');
+          obs.disconnect();
+        }
+      }, { rootMargin: '600px 0px' });
+      quoteBackgroundObserver.observe(quoteSection);
+    }
 
 
     /* -------------------------------------------

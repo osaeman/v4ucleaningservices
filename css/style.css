@@ -368,25 +368,25 @@ ul {
   background: linear-gradient(
     90deg,
     rgba(10, 22, 40, 0.96) 0%,
-    rgba(10, 22, 40, 0.86) 28%,
-    rgba(10, 22, 40, 0.46) 62%,
+    rgba(10, 22, 40, 0.8) 28%,
+    rgba(10, 22, 40, 0.4) 52%,
     rgba(10, 22, 40, 0.14) 100%
   );
 }
 .hero__slide--1 {
-  background-image: url("../assests/27.jpg");
-  /* background-position: right center; */
-  background-size: cover;
+  background-image: url("../assests/optimized/27-640.webp");
 }
-.hero__slide--2 {
-  background-image: url("../assests/8.jpg");
-  /* background-position: right center; */
-  background-size: cover;
+
+@media (min-width: 641px) {
+  .hero__slide--1 {
+    background-image: url("../assests/optimized/27-1280.webp");
+  }
 }
-.hero__slide--3 {
-  background-image: url("../assests/2.jpg");
-  /* background-position: right center; */
-  background-size: cover;
+
+@media (min-width: 1281px) {
+  .hero__slide--1 {
+    background-image: url("../assests/optimized/27-1920.webp");
+  }
 }
 
 /* Hero Content */
@@ -931,9 +931,19 @@ ul {
       rgba(10, 22, 40, 0.94) 0%,
       rgba(10, 22, 40, 0.88) 42%,
       rgba(10, 22, 40, 0.55) 100%
-    ),
-    url("../assests/17.jpg") center/cover no-repeat;
+    );
   padding: 110px 0;
+}
+
+.quote.bg-loaded {
+  background:
+    linear-gradient(
+      110deg,
+      rgba(10, 22, 40, 0.94) 0%,
+      rgba(10, 22, 40, 0.88) 42%,
+      rgba(10, 22, 40, 0.55) 100%
+    ),
+    url("../assests/optimized/17-1280.webp") center/cover no-repeat;
 }
 
 .quote::after {

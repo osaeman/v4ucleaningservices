@@ -13,6 +13,17 @@
     />
     <title>V4U Cleaning Services | Professional Commercial Cleaning UK</title>
 
+    <!-- Preload only the first visible hero image. Later slides load after the page. -->
+    <link
+      rel="preload"
+      as="image"
+      href="assests/optimized/27-1280.webp"
+      imagesrcset="assests/optimized/27-640.webp 640w, assests/optimized/27-1280.webp 1280w, assests/optimized/27-1920.webp 1920w"
+      imagesizes="100vw"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,8 +95,16 @@
     <section class="hero" id="hero" aria-label="Hero section">
       <div class="hero__slider" aria-hidden="true">
         <div class="hero__slide hero__slide--1 active"></div>
-        <div class="hero__slide hero__slide--2"></div>
-        <div class="hero__slide hero__slide--3"></div>
+        <div
+          class="hero__slide hero__slide--2"
+          data-bg-mobile="assests/optimized/8-640.webp"
+          data-bg-desktop="assests/optimized/8-1280.webp"
+        ></div>
+        <div
+          class="hero__slide hero__slide--3"
+          data-bg-mobile="assests/optimized/2-640.webp"
+          data-bg-desktop="assests/optimized/2-1920.webp"
+        ></div>
       </div>
 
       <div class="hero__content">
@@ -164,9 +183,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/21.jpg"
+              src="./assests/optimized/21-800.webp"
+              srcset="./assests/optimized/21-400.webp 400w, ./assests/optimized/21-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Healthcare facility cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -184,9 +208,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/17.jpg"
+              src="./assests/optimized/17-800.webp"
+              srcset="./assests/optimized/17-400.webp 400w, ./assests/optimized/17-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Office and building cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -206,9 +235,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/16.jpg"
+              src="./assests/optimized/16-800.webp"
+              srcset="./assests/optimized/16-400.webp 400w, ./assests/optimized/16-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Manufacturing facility cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -228,9 +262,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/11.jpg"
+              src="./assests/optimized/11-800.webp"
+              srcset="./assests/optimized/11-400.webp 400w, ./assests/optimized/11-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Restaurant cleaning services"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -248,9 +287,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/26.jpg"
+              src="./assests/optimized/26-800.webp"
+              srcset="./assests/optimized/26-400.webp 400w, ./assests/optimized/26-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Retail cleaning services"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -268,9 +312,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/25.jpg"
+              src="./assests/optimized/25-800.webp"
+              srcset="./assests/optimized/25-400.webp 400w, ./assests/optimized/25-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="530"
               alt="Construction cleaning services"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -288,9 +337,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/4.jpg"
+              src="./assests/optimized/4-800.webp"
+              srcset="./assests/optimized/4-400.webp 400w, ./assests/optimized/4-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Care home cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -308,9 +362,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/9.jpg"
+              src="./assests/optimized/9-800.webp"
+              srcset="./assests/optimized/9-400.webp 400w, ./assests/optimized/9-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="534"
               alt="Car showroom cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -328,9 +387,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/13.jpg"
+              src="./assests/optimized/13-800.webp"
+              srcset="./assests/optimized/13-400.webp 400w, ./assests/optimized/13-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Hotel and resort cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -348,9 +412,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/24.jpg"
+              src="./assests/optimized/24-800.webp"
+              srcset="./assests/optimized/24-400.webp 400w, ./assests/optimized/24-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="534"
               alt="Gym cleaning services"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -368,9 +437,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/23.jpg"
+              src="./assests/optimized/23-800.webp"
+              srcset="./assests/optimized/23-400.webp 400w, ./assests/optimized/23-800.webp 600w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="600"
+              height="900"
               alt="Bank cleaning services"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -389,9 +463,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/22.jpg"
+              src="./assests/optimized/22-800.webp"
+              srcset="./assests/optimized/22-400.webp 400w, ./assests/optimized/22-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="Stadium and event cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -409,9 +488,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/1.jpg"
+              src="./assests/optimized/1-800.webp"
+              srcset="./assests/optimized/1-400.webp 400w, ./assests/optimized/1-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="532"
               alt="Public sector cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -429,9 +513,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/7.jpg"
+              src="./assests/optimized/7-800.webp"
+              srcset="./assests/optimized/7-400.webp 400w, ./assests/optimized/7-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="533"
               alt="School and university cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -451,9 +540,14 @@
           <article class="service-card fade-up">
             <img
               class="service-card__img"
-              src="./assests/18.jpg"
+              src="./assests/optimized/18-800.webp"
+              srcset="./assests/optimized/18-400.webp 400w, ./assests/optimized/18-800.webp 800w"
+              sizes="(max-width: 520px) calc(100vw - 40px), (max-width: 900px) 50vw, (max-width: 1100px) 33vw, 25vw"
+              width="800"
+              height="450"
               alt="Tourism and leisure cleaning"
               loading="lazy"
+              decoding="async"
             />
             <div class="service-card__body">
               <div class="service-card__icon">
@@ -483,15 +577,23 @@
           <div class="about__visual fade-up">
             <img
               class="about__img-main"
-              src="./assests/2.jpg"
+              src="./assests/optimized/2-1280.webp"
+              srcset="./assests/optimized/2-640.webp 640w, ./assests/optimized/2-1280.webp 1280w"
+              sizes="(max-width: 900px) calc(100vw - 40px), 50vw"
+              width="1280"
+              height="853"
               alt="Professional cleaning team at work"
               loading="lazy"
+              decoding="async"
             />
             <img
               class="about__img-accent"
-              src="./assests/14.jpg"
+              src="./assests/optimized/14-320.webp"
+              width="320"
+              height="213"
               alt="Cleaning equipment"
               loading="lazy"
+              decoding="async"
             />
             <div class="about__badge">
               <span class="about__badge-num">10+</span>
@@ -603,8 +705,8 @@
             </div>
             <div class="contact-card__label">Phone</div>
             <div class="contact-card__value">
-              <a href="tel:+442012345678">+44 20 1234 5678</a><br />
-              <a href="tel:+442098765432">+44 20 9876 5432</a>
+              <a href="tel:+447388322569">+44 7388 322569</a><br />
+              <!-- <a href="tel:+442098765432">+44 20 9876 5432</a> -->
             </div>
           </div>
         </div>
@@ -824,10 +926,18 @@
               clean spaces.
             </p>
             <div class="footer__socials">
-              <a href="#" class="footer__social-link" aria-label="Instagram">
+              <a
+                href="https://www.facebook.com/"
+                class="footer__social-link"
+                aria-label="Instagram"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
-              <a href="#" class="footer__social-link" aria-label="Facebook">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-link"
+                aria-label="Facebook"
+              >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
             </div>
@@ -876,6 +986,6 @@
     <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
