@@ -33,7 +33,7 @@ define('SMTP_HOST',     'mail.v4ucleaningservices.co.uk'); // Your SMTP host
 define('SMTP_PORT',     587);                               // 587 (STARTTLS) or 465 (SSL)
 define('SMTP_SECURE',   PHPMailer::ENCRYPTION_STARTTLS);    // PHPMailer::ENCRYPTION_SMTPS for port 465
 define('SMTP_USER',     'info@v4ucleaningservices.co.uk');  // SMTP username / sending address
-define('SMTP_PASS',     'YOUR_EMAIL_PASSWORD_HERE');        // SMTP password
+define('SMTP_PASS',     'info@password');        // SMTP password
 define('MAIL_FROM',     'info@v4ucleaningservices.co.uk');  // From address
 define('MAIL_FROM_NAME','V4U Cleaning Services Website');   // From display name
 define('MAIL_TO',       'info@v4ucleaningservices.co.uk');  // Recipient
